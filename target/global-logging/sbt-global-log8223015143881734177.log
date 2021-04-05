@@ -1,0 +1,62 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.7 (Private Build Java 1.8.0_282)
+[debug]       Load.loadUnit: plugins took 460.103151ms
+[debug]       Load.loadUnit: defsScala took 0.631098ms
+[debug] [Loading] Scanning directory /home/borys/.sbt/1.0/plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/borys/.sbt/1.0/plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 95.611444 ms
+[debug]           Load.resolveProject(global-plugins) took 169.30878ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /home/borys/.sbt/1.0/plugins, plugins: List(<none>))) took 418.572193ms
+[debug] [Loading] Done in /home/borys/.sbt/1.0/plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 1046.188627ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.460284ms
+[debug]     Load.loadUnit(file:/home/borys/.sbt/1.0/plugins/, ...) took 1533.2159ms
+[debug]   Load.apply: load took 2335.933279ms
+[debug]   Load.apply: resolveProjects took 33.340422ms
+[debug]   Load.apply: finalTransforms took 181.174341ms
+[debug]   Load.apply: config.delegates took 12.713599ms
+[debug]   Load.apply: Def.make(settings)... took 1454.603416ms
+[debug]   Load.apply: structureIndex took 432.485439ms
+[debug]   Load.apply: mkStreams took 7.132148ms
+[info] loading global plugins from /home/borys/.sbt/1.0/plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 12915.094746ms
+[debug]           Load.loadUnit: plugins took 24.844227ms
+[debug]           Load.loadUnit: defsScala took 0.006184ms
+[debug] [Loading] Scanning directory /home/borys/projects/scala/plaipher/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/borys/projects/scala/plaipher/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 3.013452 ms
+[debug]               Load.resolveProject(plaipher-build) took 1.792539ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id plaipher-build, base: /home/borys/projects/scala/plaipher/project, plugins: List(<none>))) took 5.689766ms
+[debug] [Loading] Done in /home/borys/projects/scala/plaipher/project, returning: (plaipher-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 8.271261ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.019849ms
+[debug]         Load.loadUnit(file:/home/borys/projects/scala/plaipher/project/, ...) took 34.317391ms
+[debug]       Load.apply: load took 36.252151ms
+[debug]       Load.apply: resolveProjects took 0.149165ms
+[debug]       Load.apply: finalTransforms took 15.143612ms
+[debug]       Load.apply: config.delegates took 0.688259ms
+[debug]       Load.apply: Def.make(settings)... took 173.968675ms
+[debug]       Load.apply: structureIndex took 60.4688ms
+[debug]       Load.apply: mkStreams took 0.003705ms
+[info] loading project definition from /home/borys/projects/scala/plaipher/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 3541.933657ms
+[debug]     Load.loadUnit: defsScala took 0.00513ms
+[debug] [Loading] Scanning directory /home/borys/projects/scala/plaipher
+[debug]       Load.loadUnit: mkEval took 12.667972ms
