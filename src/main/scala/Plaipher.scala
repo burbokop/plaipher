@@ -60,8 +60,20 @@ object Plaipher {
     def arrayToString(array: Array[BiGram]): String = array.map(_.toString).mkString
   }
 
-  def crypt(data: String, key: String, except: Char = 'q', filler: Char = 'x') = {
+  def printMatrix(matrix: Array[Char]): Unit = {
+    val groups = matrix.grouped(5)
+    println("matrix:")
+    for(g <- groups) {
+      for(c <- g) {
+        print(s"$c ")
+      }
+      println()
+    }
+  }
+
+  def crypt(data: String, key: String, except: Char = 'q', filler: Char = 'x', verbose: Boolean = false) = {
     lazy val matrix = createMatrix(key, except)
+    if (verbose) printMatrix(matrix)
     val swappedBiGrams = for(
       bg <- BiGram.arrayFromString(data.filter(_ != ' '), filler)
     ) yield bg

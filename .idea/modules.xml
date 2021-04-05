@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ryptologia1.iml" filepath="$PROJECT_DIR$/.idea/modules/ryptologia1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ryptologia1-build.iml" filepath="$PROJECT_DIR$/.idea/modules/ryptologia1-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plaipher.iml" filepath="$PROJECT_DIR$/.idea/modules/plaipher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plaipher-build.iml" filepath="$PROJECT_DIR$/.idea/modules/plaipher-build.iml" />
     </modules>
   </component>
 </project>

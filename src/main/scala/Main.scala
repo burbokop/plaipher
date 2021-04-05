@@ -20,6 +20,8 @@ class FlagProvider(args: Array[String]) {
     iter(args)
   }
 
+  def boolFlag(name: String): Boolean = args.contains(name)
+
   def charFlag(name: String): Option[Char] = {
     val string: Option[String] = stringFlag(name)
     if (string.isDefined) {
@@ -46,6 +48,7 @@ object Main {
     val key = flagProvider.stringFlag("--key")
     val except = flagProvider.charFlag("--except")
     val filler = flagProvider.charFlag("--filler")
+    val verbose = flagProvider.boolFlag("--verbose")
 
     if (data.isEmpty) {
       println("Error: Data must not be empty")
@@ -73,7 +76,7 @@ object Main {
       println(s"key data: ${key.get}")
       println(s"except character: ${except.get}")
       println(s"filler character: ${filler.get}")
-      println(s"result: ${Plaipher.crypt(data.get, key.get, except.get, filler.get)}")
+      println(s"result: ${Plaipher.crypt(data.get, key.get, except.get, filler.get, verbose)}")
     }
   }
 }
